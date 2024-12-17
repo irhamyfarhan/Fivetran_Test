@@ -1,0 +1,235 @@
+fileVersion: 1
+id: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+name: STG_NETFLIX_TITLES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GD_SNOWFLAKE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 953c5069-4abb-4412-98c8-026d08fca9a6
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _LINE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ee926fd-ed5f-4a0c-8f47-c2570d98b55d
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9499675a-854e-4bf2-90ad-136c66c4b6bf
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30654ce4-f2bf-4d08-8f61-b0f9bf997ac5
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b87ff596-6b50-497e-ac78-f716186128f3
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SHOW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 200bf89a-9321-42b1-822a-82d948823cc3
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb4b748a-7247-4770-9173-9cb314e94ef0
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ade25259-9699-479d-a7a6-4b8bb34c768d
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f200c0a-26ff-44a5-8c62-acfb7781902c
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TITLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8fb52875-c8b4-4c49-9755-1bd3c4e0fb87
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6289977f-df5a-4892-b893-5ab6a4ab46b2
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DIRECTOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03bf1a00-f764-4c2f-9b4d-4475c3dbdf4b
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a937a492-3f8f-4522-9b0d-943615d860fe
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(1024)
+        description: ""
+        name: CAST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a397e28-1c94-49ed-8076-3be9f96db557
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90769f68-b8c8-405b-800a-f4d6c6ff6f4b
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24e980b7-c5da-496e-b646-fa11fcb75c65
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d37cdc6-c5b2-4836-a58b-e41590c8bfdf
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DATE_ADDED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5be9766-18c7-4935-a4e6-608be708cd76
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 713a0be2-0312-4c21-97e4-054e0fcea01b
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RELEASE_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f252e4d-ed7d-4ed5-b162-275923b40148
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3af76b4e-e84b-46a1-86a7-4cff448fa8b6
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: RATING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7db2c2e0-bfd1-4cae-8908-076bba0f5883
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8f2995f-7ece-4a71-ad70-22bccc18d66e
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DURATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98a27299-7065-429c-80d6-4e1cc96e7768
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64d66c06-2dee-426f-8562-9d3471956741
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: LISTED_IN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4465236b-a7d4-4e4f-a83d-eb2620bc9b67
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5372d26e-5a4c-4c90-a16b-6e4daea4920a
+          stepCounter: e9f7b098-5617-4c11-ba82-4f7271ce1e0d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4bccf424-215e-4d1a-9891-fcb24283cbe1
+                stepCounter: 9aa72142-091b-43bd-8c02-f5f8086a430a
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: GD_SNOWFLAKE
+            nodeName: NETFLIX_TITLES
+        join:
+          joinCondition: FROM {{ ref('GD_SNOWFLAKE', 'NETFLIX_TITLES') }} "NETFLIX_TITLES"
+        name: STG_NETFLIX_TITLES
+        noLinkRefs: []
+  name: STG_NETFLIX_TITLES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

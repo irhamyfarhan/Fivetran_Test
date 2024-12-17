@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "8"
+mappingDefinitions:
+  GD_SNOWFLAKE:
+    database: PC_COALESCE_DB
+    schema: PUBLIC
+name: Dev
+type: Environment
