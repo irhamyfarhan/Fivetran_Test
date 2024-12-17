@@ -1,0 +1,319 @@
+fileVersion: 1
+id: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+name: STG_GAMES_MAY_2024_FULL
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GD_SNOWFLAKE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba361f53-2a07-4da3-a889-d32ab6e7b61d
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _LINE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a1c92a3-d57f-4aa8-9a1c-0c5f86037b1e
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b2573dc-bffe-496c-af9f-62293ef1eab9
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aad8d49e-9ba5-4f0e-9bc2-b6e1e477411b
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee715b4c-5e4c-461b-aa41-02ee54546a33
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: APP_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4bcdbb0f-8d79-47cb-890b-8182095e5275
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 788d3f7c-ca43-4e1c-804c-530094c76367
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa96db3d-e722-46d0-93a4-e4fce604a9ba
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b54fc250-a6a1-49d4-b843-cf1b79ba7392
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: DATE
+        description: ""
+        name: RELEASE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c08305cb-9dda-4664-9b6b-a2b7144c5796
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b54efbb-ec93-41d7-b30a-0480bea09776
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: REQUIRED_AGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4351fc5-a393-48f3-9cda-f59f1febc5ac
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0d64446-f8cf-49b5-8164-256db1dcabb2
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: PRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7d85b6b-5d7c-4bb5-bbe0-88ea3e99f828
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 438f8fc7-ab07-41be-acf3-c6cf75067892
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DLC_COUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45544ce2-2762-4017-8622-87fdd53c8ff3
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43c78356-30b0-4e37-9b97-783684770d05
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(131072)
+        description: ""
+        name: ABOUT_THE_GAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6fc6a6c-2165-4fcb-b892-a45c07566b26
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 473d6407-219a-44ff-85a6-d18105f844ab
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(1024)
+        description: ""
+        name: SHORT_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5b15671-8c95-4e93-bf01-c1a17d81b34c
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55c4401f-9f74-4274-9b80-ad2fb8bbce53
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(4096)
+        description: ""
+        name: REVIEWS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4643ff2-722f-4d06-9f41-7ceac797c79f
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5d9606c-2fab-401d-af1c-2faf8ea2050c
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RECOMMENDATIONS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8369c2f-a0f5-4dc5-89a3-755cfaa31d1d
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76d0ab6c-80f6-4226-a6ac-2ec8355fca8e
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(1024)
+        description: ""
+        name: DEVELOPERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 218cc782-fecf-4083-bd7f-744613786f4c
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3e6f1f4-a116-4890-ae43-893b1d07685a
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PUBLISHERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b4ec0de-20e7-4745-9a2c-03acf981843b
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7db49126-6c10-4b79-a6f7-a13a39d0c4c8
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: CATEGORIES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47fbf49b-fe7a-43a2-98fe-f432ee0a2b4f
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce301990-8fad-40e6-86eb-766625fefbc9
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: GENRES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 477966a9-3ee2-452d-8352-5b3d39801173
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f75c92a-cfea-4704-ad14-fb89d9c02fd4
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: USER_SCORE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 556b16f3-784d-4bfe-9d77-7694c38cc634
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88c54ddf-2042-4a8d-9d2c-d81527f834ca
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: POSITIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 603265ae-34c0-4d44-b169-d88b842ff735
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d90dc7c9-b873-4665-a869-fcf9b2740c5b
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NEGATIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 16232c41-e4ab-4ef6-85eb-12b094cb0485
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41f0bff7-7a5c-4deb-809f-fca834e3906e
+          stepCounter: 9c554fc5-1b2e-49ae-a3d9-cb7d4c8284bc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NUM_REVIEWS_TOTAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d95ea82-dfac-46cb-9b4d-6d35af3e8920
+                stepCounter: 5dc9575c-0b14-487f-9628-802db4ed20f8
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: GD_SNOWFLAKE
+            nodeName: GAMES_MAY_2024_FULL
+        join:
+          joinCondition: FROM {{ ref('GD_SNOWFLAKE', 'GAMES_MAY_2024_FULL') }} "GAMES_MAY_2024_FULL"
+        name: STG_GAMES_MAY_2024_FULL
+        noLinkRefs: []
+  name: STG_GAMES_MAY_2024_FULL
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
